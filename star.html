@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      Name using Stars
+    </title>
+    
+
+<link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+<script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <body>
+      <div >
+      <py-script>
+        def psl(lett,i):
+          match lett:
+            case 'A':
+              for j in range(i,3):
+                print(" ",end=" ")
+              for k in range(3):
+                print("*",end=" ")
+              if i<4:
+                for l in range(0,2*i):
+                  print(" ",end=" ")
+              else:
+                if i>3 and i<7 or i>8:
+                  for l in range(6):
+                    print(" ",end=" ")
+                else:
+                  for l in range(6):
+                    print("*",end=" ")
+              for k in range(3):
+                print("*",end=" ")
+              if i<3:
+                for j in range(i,4):
+                  print(" ",end=" ")
+              else:
+                  print(" ",end=" ")
+            case 'B':
+              for j in range(3):
+                print("*",end=" ")
+              if i==0 or i==5 or i==10:
+                for j in range(3):
+                  print("*",end=" ")
+                for l in range(4):
+                  print(" ",end=" ")
+              else:
+                if i<3:
+                  for k in range(0,i+1):
+                    print(" ",end=" ")
+                  for j in range(3):
+                    print("*",end=" ")
+                  for l in range(i+1,4):
+                    print(" ",end=" ")
+                else:
+                  if i<5:
+                    for k in range(i,6):
+                      print(" ",end=" ")
+                    for j in range(3):
+                      print("*",end=" ")
+                    for l in range(2,i):
+                      print(" ",end=" ")
+                  else:
+                    if i<6:
+                      for j in range(3):
+                        print("*",end=" ")
+                      for l in range(5):
+                        print("0",end=" ")
+                    else:
+                      if i<8:
+                        for k in range(5,i+1):
+                          print(" ",end=" ")
+                        for j in range(3):
+                          print("*",end=" ")
+                        for l in range(i+1,9):
+                          print(" ",end=" ")
+                      else:
+                        for k in range(i,11):
+                          print(" ",end=" ")
+                        for j in range(3):
+                          print("*",end=" ")
+                        for l in range(7,i):
+                          print(" ",end=" ")
+            case 'C':
+                  if i<4:
+                    for j in range(i, 3):
+                      print(" ", end=" ")
+                  else:
+                    if i>7:
+                      for j in range(7,i):
+                        print(" ", end=" ")
+                  for k in range(3):
+                    print("*",end=" ")
+                  if i<3:
+                    if i>0:
+                      for l in range(0, 2*i):
+                        print(" ", end=" ")
+                    for k in range(3):
+                      print("*", end=" ")
+                    for l in range(i,3):
+                      print(" ",end=" ")
+                  else:
+                    if i<8:
+                      for l in range(9):
+                        print(" ",end=" ")
+                    else:
+                      for l in range(i,10):
+                        print(" "," ",end=" ");
+                      for k in range(3):
+                        print("*",end=" ")
+                      for l in range(7,i):
+                        print(" ",end=" ")
+            case 'D':
+              for j in range(3):
+                print("*",end=" ")
+              if i<1:
+                for j in range(3):
+                  print("*",end=" ")
+                for l in range(5):
+                  print(" ",end=" ")
+              else:
+                if i<3:
+                  for k in range(0,i+1):
+                    print(" ",end=" ")
+                  for j in range(3):
+                    print("*",end=" ")
+                  for l in range(i+1,5):
+                    print(" ",end=" ")
+                else:
+                  if i<8:
+                    for k in range(4):
+                      print(" ",end=" ")
+                    for j in range(3):
+                      print("*",end=" ")
+                    print(" ",end=" ")
+                  else:
+                    if i<10:
+                      for k in range(i,11):
+                        print(" ",end=" ")
+                      for j in range(3):
+                        print("*",end=" ")
+                      for l in range(6,i):
+                        print(" ",end=" ")
+                    else:
+                      for j in range(3):
+                        print("*",end=" ")
+                      for l in range(5):
+                        print(" ",end=" ")
+            case 'E':
+              for j in range(3):
+                print("*",end=" ")
+              if i<2 or (i>8):
+                for l in range(6):
+                  print("*",end=" ")
+                for m in range(1):
+                  print(" ",end=" ")
+              else:
+                if i>3 and i<7:
+                  for k in range(4):
+                    print("*",end=" ")
+                  for l in range(3):
+                    print(" ",end=" ")
+                else:
+                  for l in range(7):
+                    print(" ",end=" ")
+            case 'F':
+              for j in range(3):
+                print("*",end=" ")
+              if i<2 :
+                for l in range(6):
+                  print("*",end=" ")
+                for m in range(1):
+                  print(" ",end=" ")
+              else:
+                if i>3 and i<7:
+                  for k in range(4):
+                    print("*",end=" ")
+                  for l in range(3):
+                    print(" ",end=" ")
+                else:
+                  for l in range(7):
+                    print(" ",end=" ")
+            case 'G':
+              if i<4:
+                for j in range(i, 3):
+                  print(" ", end=" ")
+              else:
+                if i>7:
+                  for j in range(7,i):
+                    print(" ", end=" ")
+              for k in range(3):
+                print("*",end=" ")
+              if i<4:
+                if i>0:
+                  for l in range(0, 2*i):
+                    print(" ", end=" ")
+                for k in range(3):
+                  print("*", end=" ")
+                for l in range(i,4):
+                  print(" ",end=" ")
+              else:
+                if i<6:
+                  for l in range(10):
+                    print(" ",end=" ")
+                else:
+                  if  i<8:
+                    for l in range(i,10):
+                      print(" ",end=" ");
+                    for k in range(3):
+                      print("*",end=" ")
+                  else:
+                    if i<10:
+                      for l in range(i,10):
+                        print(" "," ",end=" ");
+                  for k in range(3):
+                      print("*",end=" ")
+                  for l in range(8,i):
+                      print(" ",end=" ")
+              if i==7:
+                print("*",end=" ")
+              if i>7:
+                  for k in range(2):
+                      print("*",end=" ")
+              print(" ",end=" ")
+            case 'H':
+              for j in range(3):
+                print("*",end=" ")
+              if i<4 or i>6:
+                for l in range(5):
+                  print(" ",end=" ")
+              else:
+                for k in range(5):
+                  print("*",end=" ")
+              for j in range(3):
+                print("*",end=" ")
+              print(" ",end=" ")
+            case 'I':
+                if i<2 or i>8:
+                  for k in range(11):
+                    print("*",end=" ")
+                  print(" ",end=" ")
+                else:
+                  if i<9:
+                    for j in range(4):
+                      print(" ",end=" ")
+                    for k in range(3):
+                      print("*",end=" ")
+                    for k in range(5):
+                      print(" ",end=" ")
+            case 'J':
+              if i<2 :
+                for k in range(11):
+                  print("*",end=" ")
+                print(" ",end=" ")
+              else:
+                if i<7:
+                  for j in range(4):
+                    print(" ",end=" ")
+                  for k in range(3):
+                    print("*",end=" ")
+                  for k in range(5):
+                    print(" ",end=" ")
+                else:
+                  if i>8:
+                    for l in range(8,i):
+                      print(" ",end=" ");
+                  for k in range(3):
+                    print("*",end=" ")
+                  if i>6 and i<9:
+                    print(" ",end=" ")
+                  if i<10:
+                    for k in range(3):
+                      print("*",end=" ")
+                    for k in range(5):
+                      print(" ",end=" ")
+                  else:
+                    print("*",end=" ")
+                    for k in range(6):
+                      print(" ",end=" ")
+            case 'K':
+              for j in range(3):
+                print("*",end=" ")
+              if i<6:
+                for k in range(i,5):
+                  print(" ",end=" ")
+                for j in range(3):
+                  print("*",end=" ")
+                for l in range(-1,i):
+                  print(" ",end=" ")
+              else:
+                for k in range(6,i):
+                  print(" ",end=" ")
+                for j in range(3):
+                  print("*",end=" ")
+                for l in range(i,12):
+                    print(" ",end=" ")
+            case 'L':
+              if i<9:
+                for j in range(3):
+                  print("*",end=" ")
+                for k in range(8):
+                  print(" ",end=" ")
+              else:
+                for j in range(10):
+                  print("*",end=" ")
+                for k in range(1):
+                  print(" ",end=" ")
+            case 'M':
+              for j in range(3):
+                print("*",end=" ")
+              if i<5:
+                if i<3:
+                  for k in range(0,i):
+                    print("*",end=" ")
+                  for l in range(i,4):
+                    print(" "," ",end=" ")
+                  for k in range(0,i):
+                    print("*",end=" ")
+        
+                else:
+                  for l in range(0,i-3):
+                    print(" ",end=" ")
+                  for j in range(3):
+                    print("*",end=" ")
+                  for l in range(i,4):
+                    print(" "," ",end=" ")
+                  for k in range(3):
+                    print("*",end=" ")
+                  for l in range(3,i):
+                    print(" ",end=" ")
+                for k in range(3):
+                    print("*",end=" ")
+              else:
+                if i<7:
+                  for l in range(3,i):
+                    print(" ",end=" ")
+                  for k in range(i,7):
+                    print("*","*",end=" ")
+                  for l in range(3,i):
+                    print(" ",end=" ")
+                  for k in range(3):
+                    print("*",end=" ")
+                else:
+                  for l in range(8):
+                    print(" ",end=" ")
+                  for k in range(3):
+                    print("*",end=" ")
+              print(" ",end=" ")
+            case 'N':
+              for j in range(3):
+                print("*",end=" ")
+              if i<3:
+                for k in range(0,i):
+                  print("*",end=" ")
+              else:
+                for l in range(0,i-3):
+                  print(" ",end=" ")
+                for j in range(3):
+                  print("*",end=" ")
+              for l in range(i,7):
+                print(" ",end=" ")
+              if i<8:
+                for j in range(3):
+                  print("*",end=" ")
+              else:
+                for j in range(i,10):
+                  print("*",end=" ")
+              print(" ",end=" ")
+            case 'O':
+              if i<4:
+                for j in range(i, 3):
+                  print(" ", end=" ")
+              else:
+                if i>7:
+                  for j in range(7,i):
+                    print(" ", end=" ")
+              for k in range(3):
+                print("*",end=" ")
+              if i<3:
+                if i>0:
+                  for l in range(0, 2*i):
+                    print(" ", end=" ")
+                for k in range(3):
+                  print("*", end=" ")
+                for l in range(i,4):
+                  print(" ",end=" ")
+              else:
+                if i<8:
+                  for l in range(6):
+                    print(" ",end=" ")
+                  for k in range(3):
+                    print("*", end=" ")
+                  for l in range(1):
+                    print(" ",end=" ")
+                else:
+                  for l in range(i,10):
+                    print(" "," ",end=" ");
+                  for k in range(3):
+                    print("*",end=" ")
+                  for l in range(6,i):
+                    print(" ",end=" ")
+            case 'P':
+              for j in range(3):
+                print("*",end=" ")
+              if i==0 or i==5:
+                for j in range(3):
+                  print("*",end=" ")
+                for l in range(4):
+                  print(" ",end=" ")
+              else:
+                if i<3:
+                  for k in range(0,i+1):
+                    print(" ",end=" ")
+                  for j in range(3):
+                    print("*",end=" ")
+                  for l in range(i+1,4):
+                    print(" ",end=" ")
+                else:
+                    if i<5:
+                      for k in range(i,6):
+                        print(" ",end=" ")
+                      for j in range(3):
+                        print("*",end=" ")
+                      for l in range(2,i):
+                        print(" ",end=" ")
+                    else:
+                      for l in range(7):
+                        print(" ",end=" ")
+            case 'Q':
+              if i<4:
+                for j in range(i, 3):
+                  print(" ", end=" ")
+              else:
+                if i>7:
+                  for j in range(7,i):
+                    print(" ", end=" ")
+              for k in range(3):
+                print("*",end=" ")
+              if i<3:
+                if i>0:
+                  for l in range(0, 2*i):
+                    print(" ", end=" ")
+                for k in range(3):
+                  print("*", end=" ")
+                for l in range(i,4):
+                  print(" ",end=" ")
+              else:
+                if i<6:
+                  for l in range(6):
+                    print(" ",end=" ")
+                  for k in range(3):
+                    print("*", end=" ")
+                  for l in range(1):
+                    print(" ",end=" ")
+                else:
+                  if i==6:
+        
+                      for l in range(2):
+                        print(" ",end=" ")
+                      for k in range(3):
+                        print("*", end=" ")
+                      print(" ", end=" ")
+                      for l in range(3):
+                        print("*",end=" ")
+                      print(" ",end=" ")
+                  else:
+                    if i<9:
+                      for l in range(3):
+                        print(" ",end=" ")
+                      for k in range(3):
+                        print("*",end=" ")
+                    else:
+                      if i==9:
+                        print(" "," ",end=" ")
+                        for k in range(3):
+                          print("*",end=" ")
+                        print("*",end=" ")
+                        print(" "," ",end=" ")
+                      else:
+                        for k in range(2):
+                          print("*",end=" ")
+                        print(" ",end=" ")
+                        for k in range(3):
+                          print("*",end=" ")
+                        print(" ",end=" ")
+        
+                    if i==7:
+                      for l in range(3):
+                        print("*",end=" ")
+                      print(" ",end=" ")
+                    if i==8:
+                        print("*"," "," ",end=" ")
+            case 'R':
+              for j in range(3):
+                print("*",end=" ")
+              if i==0 or i==5:
+                for j in range(3):
+                  print("*",end=" ")
+                for l in range(4):
+                  print(" ",end=" ")
+              else:
+                if i<3:
+                  for k in range(0,i+1):
+                    print(" ",end=" ")
+                  for j in range(3):
+                    print("*",end=" ")
+                  for l in range(i+1,4):
+                    print(" ",end=" ")
+                else:
+                    if i<5:
+                      for k in range(i,6):
+                        print(" ",end=" ")
+                      for j in range(3):
+                        print("*",end=" ")
+                      for l in range(2,i):
+                        print(" ",end=" ")
+                    else:
+                      if i<10:
+                        for l in range(6,i):
+                          print(" ",end=" ")
+                        for j in range(3):
+                          print("*",end=" ")
+                        for l in range(i,10):
+                          print(" ",end=" ")
+                      else:
+                        for l in range(3):
+                          print(" ",end=" ")
+                        for j in range(3):
+                          print("*",end=" ")
+                        print(" ",end=" ")
+            case 'S':
+              if i<3:
+                for j in range(i, 1):
+                  print(" ", end=" ")
+                for k in range(3):
+                  print("*",end=" ")
+                if i>0:
+                  if i==1:
+                    for l in range(0, 2*i):
+                      print(" ", end=" ")
+                  else:
+                    for l in range(3):
+                      print(" ", end=" ")
+                for k in range(3):
+                  print("*", end=" ")
+                for l in range(i,3):
+                  print(" ",end=" ")
+              else:
+                if i<8:
+                  for j in range(2,i):
+                    print(" ", end=" ")
+                  for k in range(3):
+                    print("*",end=" ")
+                  for j in range(i,9):
+                    print(" ", end=" ")
+                else:
+                  for j in range(8,i):
+                    print(" ", end=" ")
+                  for k in range(3):
+                    print("*",end=" ")
+                  if i<9:
+                    for l in range(i,11):
+                      print(" ",end=" ")
+                    for k in range(3):
+                      print("*",end=" ")
+                    print(" ",end=" ")
+                  else:
+                    for l in range(i,10):
+                      print(" "," ",end=" ")
+                    for k in range(3):
+                      print("*",end=" ")
+                    for m in range(8,i):
+                      print(" ",end=" ")
+            case 'T':
+              if i<2:
+                for k in range(11):
+                  print("*",end=" ")
+                print(" ",end=" ")
+              else:
+                for j in range(4):
+                  print(" ",end=" ")
+                for k in range(3):
+                  print("*",end=" ")
+                for k in range(5):
+                  print(" ",end=" ")
+            case 'U':
+              if i<8:
+                for j in range(3):
+                  print("*",end=" ")
+                for l in range(6):
+                  print(" ",end=" ")
+                for j in range(3):
+                  print("*",end=" ")
+                print(" ",end=" ")
+              else:
+                for k in range(7,i):
+                  print(" ",end=" ")
+                for j in range(3):
+                  print("*",end=" ")
+                if i==8:
+                  for l in range(4):
+                    print(" ",end=" ")
+                if i==9:
+                  for l in range(2):
+                    print("*",end=" ")
+                for j in range(3):
+                  print("*",end=" ")
+                for k in range(6,i):
+                  print(" ",end=" ")
+            case 'V':
+              if i>6:
+                if i<=9:
+                  for l in range(6,i):
+                    print(" ",end=" ")
+                  for j in range(3):
+                    print("*",end=" ")
+                  for l in range(i,9):
+                    print(" "," ",end=" ")
+                  for j in range(3):
+                    print("*",end=" ")
+                  for l in range(5,i):
+                    print(" ",end=" ")
+                else:
+                  for l in range(4):
+                    print(" ",end=" ")
+                  for j in range(4):
+                    print("*",end=" ")
+                  for l in range(5):
+                    print(" ",end=" ")
+              else:
+                for j in range(3):
+                  print("*",end=" ")
+                for l in range(6):
+                  print(" ",end=" ")
+                for j in range(3):
+                  print("*",end=" ")
+                print(" ",end=" ")
+            case 'W':
+              if i>6:
+                if i<=8:
+                  for l in range(6,i):
+                    print(" ",end=" ")
+                  for j in range(3):
+                    print("*",end=" ")
+                  for l in range(i,8):
+                    print(" "," ",end=" ")
+                  for j in range(3):
+                    print("*",end=" ")
+                  if i==7:
+                    for j in range(2):
+                      print("*",end=" ")
+                  else:
+                    print(" ",end=" ")
+                    for j in range(3):
+                      print("*",end=" ")
+                  for l in range(i,8):
+                    print(" "," ",end=" ")
+                  for j in range(3):
+                    print("*",end=" ")
+                  for l in range(5,i):
+                    print(" ",end=" ")
+                else:
+                  for l in range(6,i):
+                    print(" ",end=" ")
+                  for j in range(i,11):
+                    print("*","*",end=" ")
+                  for l in range(6,i):
+                    print(" ",end=" ")
+                  for l in range(9,i):
+                    print(" ",end=" ")
+                  for j in range(i,11):
+                    print("*","*",end=" ")
+                  for l in range(5,i):
+                    print(" ",end=" ")
+              else:
+                for j in range(3):
+                  print("*",end=" ")
+                for l in range(4):
+                  print(" ",end=" ")
+                for j in range(3):
+                  print("*",end=" ")
+                for l in range(4):
+                  print(" ",end=" ")
+                for j in range(3):
+                  print("*",end=" ")
+                print(" ",end=" ")
+            case 'X':
+              if i<6:
+                for l in range(0,i):
+                  print(" ",end=" ")
+                for j in range(3):
+                  print("*",end=" ")
+              else:
+                for l in range(i,10):
+                  print(" ",end=" ")
+                for j in range(3):
+                  print("*",end=" ")
+              if i<4:
+                for l in range(i,4):
+                  print(" ",end=" ")
+                if i<3:
+                  for l in range(i,3):
+                    print(" ",end=" ")
+                for j in range(3):
+                  print("*",end=" ")
+                for j in range(-1,i):
+                    print(" ",end=" ")
+              else:
+                if i==4 or i==6:
+                  for l in range(1):
+                    print("*","*",end=" ")
+                  for j in range(5):
+                    print(" ",end=" ")
+              if i>6:
+                for l in range(6,i):
+                    print(" ",end=" ")
+                if i>7:
+                  for l in range(7,i):
+                    print(" ",end=" ")
+                for j in range(3):
+                  print("*",end=" ")
+                for l in range(i,11):
+                    print(" ",end=" ")
+              if i==5:
+                for j in range(6):
+                    print(" ",end=" ")
+            case 'Y':
+              if i<3:
+                for j in range(3):
+                  print("*",end=" ")
+                for lk in range(6):
+                  print(" ",end=" ")
+                for j in range(3):
+                  print("*",end=" ")
+                print(" ",end=" ")
+              else:
+                if i<6:
+                  for k in range(2,i):
+                    print(" ",end=" ")
+                  for j in range(3):
+                    print("*",end=" ")
+                  for k in range(i,5):
+                    print(" "," ",end=" ")
+                  for j in range(3):
+                    print("*",end=" ")
+                  for l in range(1,i):
+                    print(" ",end=" ")
+                else:
+        
+                    for j in range(4):
+                      print(" ",end=" ")
+                    for m in range(4):
+                      print("*",end=" ")
+                    for l in range(5):
+                      print(" ",end=" ")
+            case 'Z':
+              if i<2 or i>8:
+                for j in range(11):
+                  print("*",end=" ")
+                print(" ",end=" ")
+              else:
+                if i<9:
+                  for l in range(i,9):
+                      print(" ",end=" ")
+                  for j in range(3):
+                    print("*",end=" ")
+                  for l in range(0,i):
+                      print(" ",end=" ")
+            case ' ':
+              for j in range(8):
+                print(" ",end=" ")
+            case '.':
+              if i<6:
+                for j in range(8):
+                  print(" ",end=" ")
+              else:
+                  if i==6 or i==10:
+                    for l in range(3):
+                      print(" ",end=" ")
+                    for j in range(2):
+                      print("*",end=" ")
+                    for l in range(3):
+                        print(" ",end=" ")
+                  else:
+                    for l in range(2):
+                      print(" ",end=" ")
+                    for j in range(4):
+                      print("*",end=" ")
+                    for l in range(2):
+                        print(" ",end=" ")
+        
+        
+        name=input()
+        l=len(name)
+        for i in range(11):
+          for r in range(l):
+            psl(name[r],i)
+          print()
+        </py-script>
+        <py-terminal class="py-script">
+          
+        </py-terminal>
+      </div>
+    </body>
+  </head>
+</html>
